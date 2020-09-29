@@ -44,32 +44,32 @@ tag_youth = Tag.create(name: "youth")
 tag_legal = Tag.create(name: "legal")
 
 # Voting Guide
-vg1 = Resource.create(title: "Voting Guide", author: "USA.gov", link: "https://www.usa.gov/voting", description: "The official guide on elections in the United States. Find answers to common questions about voting in the United States")
+vg1 = Resource.create(title: "Voting Guide", author: "USA.gov", link: "https://www.usa.gov/voting", description: "The official guide on elections in the United States. Find answers to common questions about voting in the United States.")
 ResourceTag.create(resource_id: vg1.id, tag_id: tag_voting.id)
 ResourceTag.create(resource_id: vg1.id, tag_id: tag_voting_guide.id)
 
-vg2 = Resource.create(title: "Vote From Abroad", author: "VoteFromAbroad.org", link: "https://www.votefromabroad.org/", description: "A comprehensive guide on how to vote from abroad or absentee ballots")
+vg2 = Resource.create(title: "Vote From Abroad", author: "VoteFromAbroad.org", link: "https://www.votefromabroad.org/", description: "A comprehensive guide on how to vote from abroad or absentee ballots.")
 ResourceTag.create(resource_id: vg2.id, tag_id: tag_voting.id)
 ResourceTag.create(resource_id: vg2.id, tag_id: tag_overseas_voting.id)
 
 # Volunteer Websites
-vw1 = Resource.create(title: "Flippable", author: "Flippable.org", link: "https://www.flippable.org/", description: "Volunteer effectively by focusing your efforts in swing states and ensuring the people's right to vote")
+vw1 = Resource.create(title: "Flippable", author: "Flippable.org", link: "https://www.flippable.org/", description: "Volunteer effectively by focusing your efforts in swing states and ensuring the people's right to vote.")
 ResourceTag.create(resource_id: vw1.id, tag_id: tag_voting.id)
 ResourceTag.create(resource_id: vw1.id, tag_id: tag_volunteer.id)
 
-vw2 = Resource.create(title: "Indivisible", author: "Indivisible.org", link: "https://indivisible.org/", description: "A nationwide grassroots movement to galvanize activists across all localities to advocate for the people")
+vw2 = Resource.create(title: "Indivisible", author: "Indivisible.org", link: "https://indivisible.org/", description: "A nationwide grassroots movement to galvanize activists across all localities to advocate for the people.")
 ResourceTag.create(resource_id: vw2.id, tag_id: tag_volunteer.id)
 ResourceTag.create(resource_id: vw2.id, tag_id: tag_civil_liberty.id)
 
-vw3 = Resource.create(title: "Emily's List", author: "EmilysList.org", link: "https://www.emilyslist.org/", description: "An organization for supporting candidates who advocate for women's rights across all states")
+vw3 = Resource.create(title: "Emily's List", author: "EmilysList.org", link: "https://www.emilyslist.org/", description: "An organization for supporting candidates who advocate for women's rights across all states.")
 ResourceTag.create(resource_id: vw3.id, tag_id: tag_volunteer.id)
 ResourceTag.create(resource_id: vw3.id, tag_id: tag_womens_rights.id)
 
-vw4 = Resource.create(title: "Sister District Project", author: "SisterDistrict.com", description: "An organization that helps strategize plans for winning a small number of handpicked strategic legislative races")
+vw4 = Resource.create(title: "Sister District Project", author: "SisterDistrict.com", description: "An organization that helps strategize plans for winning a small number of handpicked strategic legislative races.")
 ResourceTag.create(resource_id: vw4.id, tag_id: tag_volunteer.id)
 ResourceTag.create(resource_id: vw4.id, tag_id: tag_voting.id)
 
-vw5 = Resource.create(title: "Mobilize", author: "Mobilize.us", link: "https://www.mobilize.us/", description: "A website for looking up volunteering events based on location, organization or cause")
+vw5 = Resource.create(title: "Mobilize", author: "Mobilize.us", link: "https://www.mobilize.us/", description: "A website for looking up volunteering events based on location, organization or cause.")
 ResourceTag.create(resource_id: vw5.id, tag_id: tag_volunteer.id)
 
 vw6 = Resource.create(title: "Tech for Campaigns", author: "TechForCampaigns.org", link: "https://www.techforcampaigns.org/", description: "Volunteer your technical skills and talents to help political campaigns.")
@@ -103,7 +103,7 @@ ResourceTag.create(resource_id: vw13.id, tag_id: tag_youth.id)
 ResourceTag.create(resource_id: vw13.id, tag_id: tag_equality.id)
 
 # Campaign Guide
-cg1 = Resource.create(title: "Run for Office", author: "Osita Nwanevu", link: "https://slate.com/news-and-politics/2017/01/a-guide-to-resources-for-running-for-office.html", description: "A comprehensive compilation of committees, trainings, books, services, and software for people who plan on running for office")
+cg1 = Resource.create(title: "Run for Office", author: "Osita Nwanevu", link: "https://slate.com/news-and-politics/2017/01/a-guide-to-resources-for-running-for-office.html", description: "A comprehensive compilation of committees, trainings, books, services, and software for people who plan on running for office.")
 ResourceTag.create(resource_id: cg1.id, tag_id: tag_campaigning.id)
 
 # Non-profit Organizations
@@ -111,18 +111,18 @@ np1 = Resource.create(title: "American Civil Liberties Union", author: "ACLU.org
 ResourceTag.create(resource_id: np1.id, tag_id: tag_civil_liberty.id)
 ResourceTag.create(resource_id: np1.id, tag_id: tag_volunteer.id)
 
-np2 = Resource.create(title: "Citizens Climate Lobby", author: "CitizensClimateLobby.org", link: "https://citizensclimatelobby.org/", description: "A non-profit, nonpartisan, grassroots advocacy organization focused on national policies to address climate change")
+np2 = Resource.create(title: "Citizens Climate Lobby", author: "CitizensClimateLobby.org", link: "https://citizensclimatelobby.org/", description: "A non-profit, nonpartisan, grassroots advocacy organization focused on national policies to address climate change.")
 ResourceTag.create(resource_id: np2.id, tag_id: tag_environment.id)
 
-np3 = Resource.create(title: "NYC Environmental Justice Alliance", author: "NYC-EJA.org", link: "https://www.nyc-eja.org/", description: "Links grassroots organizations from low-income neighborhoods and communities of color in their struggle for environmental justice")
+np3 = Resource.create(title: "NYC Environmental Justice Alliance", author: "NYC-EJA.org", link: "https://www.nyc-eja.org/", description: "Links grassroots organizations from low-income neighborhoods and communities of color in their struggle for environmental justice.")
 ResourceTag.create(resource_id: np3.id, tag_id: tag_environment.id)
 
-np4 = Resource.create(title: "Victory Fund", author: "VictoryFund.org", link: "https://victoryfund.org/", description: "An organization dedicated to providing campaign, fundraising and communications support to LGBTQ candidates to increase the number of openly LGBTQ elected officials")
+np4 = Resource.create(title: "Victory Fund", author: "VictoryFund.org", link: "https://victoryfund.org/", description: "An organization dedicated to providing campaign, fundraising and communications support to LGBTQ candidates to increase the number of openly LGBTQ elected officials.")
 ResourceTag.create(resource_id: np4.id, tag_id: tag_equality.id)
 
 np5 = Resource.create(title: "Legal Action Center", author: "LegalActionCenter.org", link: "https://www.lac.org/", description: "The Legal Action Center (LAC) uses legal and policy strategies to fight discrimination, build health equity, and restore opportunity for people with criminal records, substance use disorders, and HIV or AIDS.")
 ResourceTag.create(resource_id: np5.id, tag_id: tag_incarceration)
 ResourceTag.create(resource_id: np5.id, tag_id: tag_legal.id)
 
-np6 = Resource.create(title: "Know Your Rights Camp", author: "KnowYourRightsCamp.com", link: "https://www.knowyourrightscamp.com/", description: "Advances the liberation and well-being of Black and Brown communities through education, self-empowerment, mass-mobilization and the creation of new systems that elevate the next generation of change leaders")
+np6 = Resource.create(title: "Know Your Rights Camp", author: "KnowYourRightsCamp.com", link: "https://www.knowyourrightscamp.com/", description: "Advances the liberation and well-being of Black and Brown communities through education, self-empowerment, mass-mobilization and the creation of new systems that elevate the next generation of change leaders.")
 ResourceTag.create(resource_id: np6.id, tag_id: tag_youth.id)
