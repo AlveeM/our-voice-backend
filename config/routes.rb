@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   get '/resources', to: 'resources#show'
   get '/tags', to: 'tags#show'
+
+  get '/elections', to: 'elections#show'
+  post '/follow_election/:id', to: 'users#follow_election'
+  post '/unfollow_election/:id', to: 'users#unfollow_election'
 end

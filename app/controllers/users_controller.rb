@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorized, only: [:stay_logged_in, :show]
+  before_action :authorized, only: [:stay_logged_in, :show, :follow_election, :unfollow_election]
 
   def show
     @user = User.find(params[:id])
@@ -48,6 +48,28 @@ class UsersController < ApplicationController
       user: UserSerializer.new(@user),
       token: token
     }
+  end
+
+  def follow_election
+    election_id = params[:id].to_i
+    follow = Follow.find_by(election_id: election_id)
+    if follow
+      render json: { error: "already following" }
+    else 
+      follow = Follow.create(user_id: @user.id, election_id: election_id)
+      render json: { follow: follow }
+    end
+  end
+
+  def unfollow_election
+    election_id = params[:id]
+    follow = Follow.find_by(user_id: @user.id, election_id: election_id)
+    if follow
+      follow.destroy
+      render json: { message: "unfollowed election" }
+    else 
+      render json: { error: "no election found" }
+    end
   end
 
   private
